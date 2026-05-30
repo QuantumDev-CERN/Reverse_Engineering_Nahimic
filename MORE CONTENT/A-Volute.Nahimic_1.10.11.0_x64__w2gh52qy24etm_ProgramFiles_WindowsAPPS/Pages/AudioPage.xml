@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AudioPage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Effect>
+		<Name>Bass Boost</Name> <!-- Must not be empty  -->
+		<Priority>4</Priority>		<!-- smaller is the number, higher is the priority, start with 1 -->
+		<Mode>0</Mode> 				<!-- 0 : Normal , 1: Extended -->
+		<Visibility>1</Visibility>  <!-- 0 : Not visible , 1: Visible -->
+	</Effect>
+	<Effect>
+		<Name>Smart Loudness</Name>
+		<Priority>2</Priority>
+		<Mode>0</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+	<Effect>
+		<Name>Voice Clarity</Name>
+		<Priority>3</Priority>
+		<Mode>0</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+	<Effect>
+		<Name>Virtual Surround</Name>
+		<Priority>1</Priority>
+		<Mode>1</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+	<Effect>
+		<Name>Treble Enhancer</Name>
+		<Priority>5</Priority>
+		<Mode>0</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+</AudioPage>

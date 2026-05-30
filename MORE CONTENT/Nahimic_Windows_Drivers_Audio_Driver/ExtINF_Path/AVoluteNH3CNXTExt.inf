@@ -1,0 +1,160 @@
+[Version]
+Signature = "$WINDOWS NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider = %Provider%
+ExtensionId = {741a2100-1023-11e9-b56e-0800200c9a66}
+DriverVer = 07/16/2025,1.3.16.0
+PnpLockdown = 1
+CatalogFile = AVoluteNH3Ext.cat
+
+[SourceDisksNames]
+222 = %DiskId1%
+
+[SourceDisksFiles]
+NH3CNXTProductSettings1.cab=222
+
+[DestinationDirs]
+;; Windows\System32\A-Volute\AGSConfigurator\
+AVoluteProdSettings1.CopyList = 11,\A-Volute\AGSConfigurator
+
+[AVoluteProdSettings1.CopyList]
+NH3CNXTProductSettings1.cab
+
+[Manufacturer]
+%Provider% = DeviceExtensions,NTamd64.10.0...15063
+
+[DeviceExtensions.NTamd64.10.0...15063]
+%Device.ExtensionDesc% = CNXTHDARender0_Install,INTELAUDIO\FUNC_01&VEN_14F1&DEV_1F87&SUBSYS_17AA383B
+
+[CNXTHDARender0_Install]
+CopyFiles = AVoluteProdSettings1.CopyList
+
+[CNXTHDARender0_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[CNXTHDARender0_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+AddDevice = Nahimic_XVAD,,Nahimic_XVAD_RootDevice_Inst
+
+[APONH_Install]
+ComponentIDs = VEN_AVOL&AID_0802
+Description = "Nahimic Nh4 Audio Effects Component"
+
+[Nahimic_Mirroring_RootDevice_Inst]
+HardwareIds = ROOT\Nahimic_Mirroring
+
+[Nahimic_BTLink_RootDevice_Inst]
+HardwareIds = ROOT\NahimicBTLink
+
+[Nahimic_XVAD_RootDevice_Inst]
+HardwareIds = ROOT\NahimicXVAD
+
+[CNXTHDARender0_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,RearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,RearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,DigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,DigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,DigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,DigitalOutputTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,DigitalOutputTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,DigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,DigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,DigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,DigitalOutput2Topo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,DigitalOutput2Topo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,FrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,FrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,HeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,HeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,HeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,HeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,HeadphoneTopo,AzAudModel0.CNXTRender
+; For offloaded
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedRearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,OffloadedRearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,OffloadedRearLineOutWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedRearLineOutTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedRearLineOutTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedRearLineOutTopo2,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedRearLineOutTopo2,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedDigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,OffloadedDigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,OffloadedDigitalOutputWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedDigitalOutputTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedDigitalOutputTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedDigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,OffloadedDigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,OffloadedDigitalOutput2Wave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedDigitalOutput2Topo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedDigitalOutput2Topo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedFrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,OffloadedFrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,OffloadedFrontPanelHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedFrontPanelHeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedFrontPanelHeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_RENDER%,OffloadedHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_REALTIME%,OffloadedHeadphoneWave,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_AUDIO%,OffloadedHeadphoneTopo,AzAudModel0.CNXTRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,OffloadedHeadphoneTopo,AzAudModel0.CNXTRender
+
+[AzAudModel0.CNXTRender]
+AddReg = ProductId_AddReg,Lenovo_VendorName
+
+[ProductId_AddReg]
+;; PKEY_AudioEndpoint_Association
+HKR,EP\0,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,EP\1,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,EP\2,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+
+;; PKEY_PRODUCTID
+HKR,EP\0,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,EP\1,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,EP\2,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_PRODUCTID_ISST
+HKR,EP\0,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,EP\1,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,EP\2,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_SUPPORT: value 2 for Senary
+HKR,EP\0,%PKEY_SUPPORT%,%REG_DWORD%,0x2
+HKR,EP\1,%PKEY_SUPPORT%,%REG_DWORD%,0x2
+HKR,EP\2,%PKEY_SUPPORT%,%REG_DWORD%,0x2
+
+[Lenovo_VendorName]
+;; PKEY_VENDORNAME
+HKR,EP\0,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,EP\1,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,EP\2,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+
+[Strings]
+Provider = "A-Volute"
+Device.ExtensionDesc = "A-Volute APO4 Extension"
+DiskId1 = "A-Volute Extension Installation Disk"
+ProductId = "A-Volute.Nahimic"
+PKEY_AudioEndpoint_Association = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_PRODUCTID = "{F363DF17-A750-4AC3-B7B5-2BBEFFA9085F},11"
+PKEY_PRODUCTID_ISST = "{9B8844FE-1650-40E5-A5EA-11B8C83821A1},12"
+PKEY_SUPPORT = "{1A6219BF-2157-4A15-9414-5BFD0593D3E6},0"
+PKEY_VENDORNAME = "{3B454CDE-1938-473F-9DBF-5D6A56332FB5},0"
+PKEY_FIXED_VOLUME = "{F811C4A8-6B1F-4BF0-A264-7C1BA19F056F},0"
+
+KSNODETYPE_ANY = "{00000000-0000-0000-0000-000000000000}"
+KSCATEGORY_REALTIME = "{EB115FFC-10C8-4964-831D-6DCB02E6F23F}"
+KSCATEGORY_CAPTURE = "{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_RENDER = "{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_AUDIO = "{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_TOPOLOGY = "{DDA54A40-1E4C-11D1-A050-405705C10000}"
+
+REG_SZ = 0x00000000
+REG_DWORD = 0x00010001
+REG_MULTI_SZ = 0x00010000

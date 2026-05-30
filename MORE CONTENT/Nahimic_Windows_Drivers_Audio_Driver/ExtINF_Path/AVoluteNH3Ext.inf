@@ -1,0 +1,525 @@
+[Version]
+Signature = "$WINDOWS NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider = %Provider%
+ExtensionId = {741a2100-1023-11e9-b56e-0800200c9a66}
+DriverVer = 07/16/2025,1.3.16.0
+PnpLockdown = 1
+CatalogFile = AVoluteNH3Ext.cat
+
+[SourceDisksNames]
+222 = %DiskId1%
+
+[SourceDisksFiles]
+NH3ProductSettings0.cab=222
+NH3ProductSettings1.cab=222
+
+[DestinationDirs]
+;; Windows\System32\A-Volute\AGSConfigurator\
+AVoluteProdSettings0.CopyList = 11,\A-Volute\AGSConfigurator
+AVoluteProdSettings1.CopyList = 11,\A-Volute\AGSConfigurator
+
+[AVoluteProdSettings0.CopyList]
+NH3ProductSettings0.cab
+
+[AVoluteProdSettings1.CopyList]
+NH3ProductSettings1.cab
+
+[Manufacturer]
+%Provider% = DeviceExtensions,NTamd64.10.0...15063
+
+[DeviceExtensions.NTamd64.10.0...15063]
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3733
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3750
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3753
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3768
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3769
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA376A
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3841
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3845
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3846
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3847
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3855
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3859
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3877
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3878
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E5
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E6
+%Device.ExtensionDesc% = RtkHDARender0_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E8
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3850
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3851
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3854
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA386E
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA386F
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3874
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3961
+%Device.ExtensionDesc% = RtkHDARender0_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3962
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3335
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3336
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0222&SUBSYS_17AA3730
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3741
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0222&SUBSYS_17AA3743
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3754
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA38D3
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA38D4
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39D5
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39D6
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E2
+%Device.ExtensionDesc% = RtkHDARender1_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E4
+%Device.ExtensionDesc% = RtkHDARender1_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA38D2
+%Device.ExtensionDesc% = RtkHDARender1_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3987
+%Device.ExtensionDesc% = RtkHDARender1_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA39E9
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA377F
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_1220&SUBSYS_17AA3784
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0897&SUBSYS_17AA3785
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3787
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3788
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA378B
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3799
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA379E
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38A5
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38A7
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38A8
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38B6
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38B7
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BF5
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3C05
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB3
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB4
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CBD
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CBE
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CBF
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3D9C
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3DDD
+%Device.ExtensionDesc% = RtkHDARender2_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3F14
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0623&SUBSYS_17AA3789
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3883
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3884
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3886
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38B4
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38B5
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38C3
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38CB
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38CD
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38DF
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA38E0
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA392C
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA392D
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BF4
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3C22
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB2
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB5
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CB8
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3CBC
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3D9D
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3DBC
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3DCB
+%Device.ExtensionDesc% = RtkHDARender2_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3F17
+%Device.ExtensionDesc% = RtkHDARender3_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BFA
+%Device.ExtensionDesc% = RtkHDARender3_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BFB
+%Device.ExtensionDesc% = RtkHDARender3_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BF2
+%Device.ExtensionDesc% = RtkHDARender3_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3BF3
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3926
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3927
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3928
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3933
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3934
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3935
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3936
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3937
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3938
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3939
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3953
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3956
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3DFA
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3E04
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3E05
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3E16
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3E1C
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA8098
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA809F
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA80A1
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA80BC
+%Device.ExtensionDesc% = RtkHDARender4_Install,HDAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA80C5
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3906
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3907
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3908
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA392E
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3932
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3DCC
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA3E1D
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA8033
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA803A
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA809C
+%Device.ExtensionDesc% = RtkHDARender4_Install,INTELAUDIO\FUNC_01&VEN_10EC&DEV_0257&SUBSYS_17AA80B9
+
+[RtkHDARender0_Install]
+CopyFiles = AVoluteProdSettings0.CopyList
+AddReg = RtkRenderInterface_AddReg,General_RtkEPAddReg,RtkNoSpkFixEPAddReg,LenovoVN_RtkEPAddReg
+
+[RtkHDARender0_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[RtkHDARender0_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+
+[RtkHDARender1_Install]
+CopyFiles = AVoluteProdSettings0.CopyList
+AddReg = RtkRenderInterface_AddReg,General_RtkEPAddReg,RtkNoSpkFixEPAddReg,LenovoGenericVN_RtkEPAddReg
+
+[RtkHDARender1_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[RtkHDARender1_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+
+[RtkHDARender2_Install]
+CopyFiles = AVoluteProdSettings0.CopyList
+AddReg = RtkRenderInterface_AddReg,General_RtkEPAddReg,RtkNoSpkFixEPAddReg,LenovoVN_RtkEPAddReg
+
+[RtkHDARender2_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[RtkHDARender2_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+AddDevice = Nahimic_XVAD,,Nahimic_XVAD_RootDevice_Inst
+
+[RtkHDARender3_Install]
+CopyFiles = AVoluteProdSettings0.CopyList
+AddReg = RtkRenderInterface_AddReg,General_RtkEPAddReg,RtkNoSpkFixEPAddReg,LenovoGenericVN_RtkEPAddReg
+
+[RtkHDARender3_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[RtkHDARender3_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+AddDevice = Nahimic_XVAD,,Nahimic_XVAD_RootDevice_Inst
+
+[RtkHDARender4_Install]
+CopyFiles = AVoluteProdSettings1.CopyList
+AddReg = RtkRenderInterface_AddReg,General_RtkEPAddReg,RtkNoSpkFixEPAddReg,LenovoVN_RtkEPAddReg
+
+[RtkHDARender4_Install.Components]
+AddComponent = AVOLUTE_NH4APO,,APONH_Install
+
+[RtkHDARender4_Install.Devices]
+AddDevice = Nahimic_Mirroring,,Nahimic_Mirroring_RootDevice_Inst
+AddDevice = Nahimic_BTLink,,Nahimic_BTLink_RootDevice_Inst
+AddDevice = Nahimic_XVAD,,Nahimic_XVAD_RootDevice_Inst
+
+[APONH_Install]
+ComponentIDs = VEN_AVOL&AID_0802
+Description = "Nahimic Nh4 Audio Effects Component"
+
+[Nahimic_Mirroring_RootDevice_Inst]
+HardwareIds = ROOT\Nahimic_Mirroring
+
+[Nahimic_BTLink_RootDevice_Inst]
+HardwareIds = ROOT\NahimicBTLink
+
+[Nahimic_XVAD_RootDevice_Inst]
+HardwareIds = ROOT\NahimicXVAD
+
+[RtkHDARender0_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,PrimaryLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,PrimaryLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SingleLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SingleLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SecondaryLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SecondaryLineOutTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifHDMITopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifHDMITopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifRCATopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifRCATopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifOptTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifOptTopo,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST2,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST2,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST3,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST3,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoDock,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoDock,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap2,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap2,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap3,AzAudModel0.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap3,AzAudModel0.RtkRender
+
+[RtkHDARender1_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,PrimaryLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,PrimaryLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SingleLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SingleLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SecondaryLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SecondaryLineOutTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifHDMITopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifHDMITopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifRCATopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifRCATopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifOptTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifOptTopo,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST2,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST2,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST3,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST3,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoDock,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoDock,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap2,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap2,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap3,AzAudModel1.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap3,AzAudModel1.RtkRender
+
+[RtkHDARender2_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,PrimaryLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,PrimaryLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SingleLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SingleLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SecondaryLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SecondaryLineOutTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifHDMITopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifHDMITopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifRCATopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifRCATopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifOptTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifOptTopo,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST2,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST2,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST3,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST3,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoDock,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoDock,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap2,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap2,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap3,AzAudModel2.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap3,AzAudModel2.RtkRender
+
+[RtkHDARender3_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,PrimaryLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,PrimaryLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SingleLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SingleLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SecondaryLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SecondaryLineOutTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifHDMITopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifHDMITopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifRCATopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifRCATopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifOptTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifOptTopo,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST2,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST2,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST3,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST3,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoDock,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoDock,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap2,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap2,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap3,AzAudModel3.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap3,AzAudModel3.RtkRender
+
+[RtkHDARender4_Install.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,PrimaryLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,PrimaryLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SingleLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SingleLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,SecondaryLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,SecondaryLineOutTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,FrontPanelHeadphoneTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,FrontPanelHeadphoneTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifHDMITopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifHDMITopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifRCATopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifRCATopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RtSpdifOptTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RtSpdifOptTopo,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST2,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST2,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoSST3,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoSST3,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoDock,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoDock,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap2,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap2,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_AUDIO%,RearLineOutTopoHap3,AzAudModel4.RtkRender
+AddInterface=%KSCATEGORY_TOPOLOGY%,RearLineOutTopoHap3,AzAudModel4.RtkRender
+
+[AzAudModel0.RtkRender]
+AddReg = ProductId_AddReg,Lenovo_VendorName
+
+[AzAudModel1.RtkRender]
+AddReg = ProductId_AddReg,LenovoGeneric_VendorName
+
+[AzAudModel2.RtkRender]
+AddReg = ProductId_AddReg,Lenovo_VendorName
+
+[AzAudModel3.RtkRender]
+AddReg = ProductId_AddReg,LenovoGeneric_VendorName
+
+[AzAudModel4.RtkRender]
+AddReg = ProductId_AddReg,Lenovo_VendorName
+
+[RtkRenderInterface_AddReg]
+HKR,Settings,EPSubVer2,0x00010001,3
+HKR,Settings,SPK_FIX_ED_HW_VOLUME,0x00010001,0
+HKR,Settings,EFFECT_CFG_AVO,0x00010001,0
+HKR,InterfaceSetting,RearLineOutTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,PrimaryLineOutTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,SingleLineOutTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,SecondaryLineOutTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,FrontPanelHeadphoneTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RtSpdifTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RtSpdifHDMITopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RtSpdifRCATopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RtSpdifOptTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,BTBPOutTopo,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoSST,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoSST2,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoSST3,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoDock,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoHap,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoHap2,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+HKR,InterfaceSetting,RearLineOutTopoHap3,0x10008,"GeneralRtkEP_1316","LenovoVNRtkEP_1316","LenovoGenericVNRtkEP_1316"
+
+[General_RtkEPAddReg]
+;; PKEY_AudioEndpoint_Association
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\0,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\1,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\2,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+
+;; PKEY_PRODUCTID
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\0,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\1,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\2,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_PRODUCTID_ISST
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\0,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\1,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\2,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_SUPPORT: value 1 for Realtek
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\0,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\1,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\2,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+
+[RtkNoSpkFixEPAddReg]
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\0,%PKEY_FIXED_VOLUME%,%REG_DWORD%,0x0
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\1,%PKEY_FIXED_VOLUME%,%REG_DWORD%,0x0
+HKR,InterfaceSetting\GeneralRtkEP_1316\EP\2,%PKEY_FIXED_VOLUME%,%REG_DWORD%,0x0
+
+[LenovoVN_RtkEPAddReg]
+HKR,InterfaceSetting\LenovoVNRtkEP_1316\EP\0,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,InterfaceSetting\LenovoVNRtkEP_1316\EP\1,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,InterfaceSetting\LenovoVNRtkEP_1316\EP\2,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+
+[LenovoGenericVN_RtkEPAddReg]
+HKR,InterfaceSetting\LenovoGenericVNRtkEP_1316\EP\0,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+HKR,InterfaceSetting\LenovoGenericVNRtkEP_1316\EP\1,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+HKR,InterfaceSetting\LenovoGenericVNRtkEP_1316\EP\2,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+
+[ProductId_AddReg]
+;; PKEY_AudioEndpoint_Association
+HKR,EP\0,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,EP\1,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,EP\2,%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+
+;; PKEY_PRODUCTID
+HKR,EP\0,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,EP\1,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+HKR,EP\2,%PKEY_PRODUCTID%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_PRODUCTID_ISST
+HKR,EP\0,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,EP\1,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+HKR,EP\2,%PKEY_PRODUCTID_ISST%,%REG_SZ%,%PRODUCTID%
+
+;; PKEY_SUPPORT: value 1 for Realtek
+HKR,EP\0,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+HKR,EP\1,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+HKR,EP\2,%PKEY_SUPPORT%,%REG_DWORD%,0x1
+
+[Lenovo_VendorName]
+;; PKEY_VENDORNAME
+HKR,EP\0,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,EP\1,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+HKR,EP\2,%PKEY_VENDORNAME%,%REG_SZ%,"Lenovo"
+
+[LenovoGeneric_VendorName]
+;; PKEY_VENDORNAME
+HKR,EP\0,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+HKR,EP\1,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+HKR,EP\2,%PKEY_VENDORNAME%,%REG_SZ%,"LenovoGeneric"
+
+[Strings]
+Provider = "A-Volute"
+Device.ExtensionDesc = "A-Volute APO4 Extension"
+DiskId1 = "A-Volute Extension Installation Disk"
+ProductId = "A-Volute.Nahimic"
+PKEY_AudioEndpoint_Association = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_PRODUCTID = "{F363DF17-A750-4AC3-B7B5-2BBEFFA9085F},11"
+PKEY_PRODUCTID_ISST = "{9B8844FE-1650-40E5-A5EA-11B8C83821A1},12"
+PKEY_SUPPORT = "{1A6219BF-2157-4A15-9414-5BFD0593D3E6},0"
+PKEY_VENDORNAME = "{3B454CDE-1938-473F-9DBF-5D6A56332FB5},0"
+PKEY_FIXED_VOLUME = "{F811C4A8-6B1F-4BF0-A264-7C1BA19F056F},0"
+
+KSNODETYPE_ANY = "{00000000-0000-0000-0000-000000000000}"
+KSCATEGORY_REALTIME = "{EB115FFC-10C8-4964-831D-6DCB02E6F23F}"
+KSCATEGORY_CAPTURE = "{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_RENDER = "{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_AUDIO = "{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_TOPOLOGY = "{DDA54A40-1E4C-11D1-A050-405705C10000}"
+
+REG_SZ = 0x00000000
+REG_DWORD = 0x00010001
+REG_MULTI_SZ = 0x00010000

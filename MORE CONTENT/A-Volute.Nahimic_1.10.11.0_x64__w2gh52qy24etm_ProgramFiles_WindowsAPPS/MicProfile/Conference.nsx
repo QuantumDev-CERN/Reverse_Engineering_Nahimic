@@ -1,0 +1,8 @@
+<Settings>
+  <Setting key="VoiceStabilizerState"  value="1"/>
+  <Setting key="NoiseSuppressionState"  value="1"/>
+  <Setting key="NoisSuppressionValue"  value="0.0316"/>
+  <Setting key="AECState"  value="1"/>
+  <Setting key="BeamformingState"  value="0"/>
+</Settings>
+ 

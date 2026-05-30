@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AudioPage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Effect>
+		<Name>Static Noise Suppression</Name> <!-- Must not be empty  -->
+		<Priority>1</Priority>		<!-- smaller is the number, higher is the priority, start with 1 -->
+		<Mode>1</Mode> 				<!-- 0 : Normal , 1: Extended -->
+		<Visibility>1</Visibility>  <!-- 0 : Not visible , 1: Visible -->
+	</Effect>
+	<Effect>
+		<Name>Echo Cancellation</Name>
+		<Priority>2</Priority>
+		<Mode>0</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+	<Effect>
+		<Name>Lateral Sound Cancellation</Name>
+		<Priority>3</Priority>
+		<Mode>0</Mode>
+		<Visibility>1</Visibility>
+	</Effect>
+    <Effect>
+        <Name>Voice Stabilizer</Name>
+        <Priority>4</Priority>
+        <Mode>1</Mode>
+        <Visibility>1</Visibility>
+    </Effect>
+</AudioPage>

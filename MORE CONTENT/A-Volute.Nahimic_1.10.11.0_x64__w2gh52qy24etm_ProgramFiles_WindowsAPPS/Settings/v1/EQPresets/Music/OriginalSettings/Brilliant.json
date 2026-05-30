@@ -1,0 +1,12 @@
+{
+  "EQ32HzGainDB": 0,
+  "EQ64HzGainDB": 0,
+  "EQ125HzGainDB": -1,
+  "EQ250HzGainDB": -2,
+  "EQ500HzGainDB": -2,
+  "EQ1kHzGainDB": 0,
+  "EQ2kHzGainDB": 1,
+  "EQ4kHzGainDB": 4,
+  "EQ8kHzGainDB": 6,
+  "EQ16kHzGainDB": 2
+}

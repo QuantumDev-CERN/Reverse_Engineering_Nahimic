@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap mp uap4 uap5 build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <Identity Name="A-Volute.Nahimic" Publisher="CN=21E1B422-257A-44A2-9C8F-379165856473" Version="1.10.11.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="7960c5e7-e3f7-4934-8650-3bb213515028" PhonePublisherId="dfc9a771-d484-4c43-b2c3-22f0c2a2bd77" />
+  <Properties>
+    <DisplayName>Nahimic</DisplayName>
+    <PublisherDisplayName>A-Volute</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily MaxVersionTested="10.0.17134.0" MinVersion="10.0.16299.0" Name="Windows.Universal" />
+    <PackageDependency Name="Microsoft.NET.Native.Framework.2.2" MinVersion="2.2.27912.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Runtime.2.2" MinVersion="2.2.28604.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.26706.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+    <Resource uap:Scale="200" />
+  </Resources>
+  <Applications>
+    <Application EntryPoint="Nahimic3.App" Executable="Nahimic3.exe" Id="App">
+      <uap:VisualElements BackgroundColor="transparent" Description="Nahimic3" DisplayName="Nahimic" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" uap5:Optional="true" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="nh3-msi">
+            <uap:Logo>Assets\StoreLogo.png</uap:Logo>
+            <uap:DisplayName>Nahimic 3 URI</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <uap4:CustomCapability Name="AVolute.audioDevices_w2gh52qy24etm" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.publisherCacheFolders">
+      <PublisherCacheFolders>
+        <Folder Name="Toast" />
+      </PublisherCacheFolders>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WasapiPlayer.dll</Path>
+        <ActivatableClass ActivatableClassId="WasapiAudio.WasapiPlayer" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>RadarDxView.dll</Path>
+        <ActivatableClass ActivatableClassId="RadarDxView.DirectXPage" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RadarDxView.RadarDxView_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AudioDevice.dll</Path>
+        <ActivatableClass ActivatableClassId="AudioDevice.AudioDeviceAPI" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AudioDevice.Interface.dll</Path>
+        <ActivatableClass ActivatableClassId="AudioDevice.Interface.AudioFormat" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AudioDevice.Interface.PropertyKeys" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AudioDevice.Interface.PropertyKey" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AGSWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="AGSWRC.Expert" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC.Basic" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC.SimpleNotifications" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC.Simple" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AudioGraphSettingsClient.dll</Path>
+        <ActivatableClass ActivatableClassId="AudioGraphSettingsClient.AGSClientFactory" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>BTLinkWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="BTLinkWRC.BTLink" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>DataSystemWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="DataSystemWRC.DSEnumerator" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>MirroringWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="MirroringWRC.Mirroring" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AGSWRC2.dll</Path>
+        <ActivatableClass ActivatableClassId="AGSWRC2.Expert" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC2.Basic" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC2.SimpleNotifications" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="AGSWRC2.Simple" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>ShortcutManager.dll</Path>
+        <ActivatableClass ActivatableClassId="ShortcutManager.ShortcutManagerClient" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>SonicMapperGfxWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="SonicMapperGfxWRC.SonicMapperGfx" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>SonicMapperProfileWrc.dll</Path>
+        <ActivatableClass ActivatableClassId="SonicMapperProfileWrc.GameScanning" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>StreamingDashboardWRC.dll</Path>
+        <ActivatableClass ActivatableClassId="StreamingDashboardWRC.StreamingDashboard" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>RPCClient.dll</Path>
+        <ActivatableClass ActivatableClassId="RPCClient.RpcEvent" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="RPCClient.RpcClient" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="SharedGUID" Value="b71eace6-8613-4bab-9b09-63e61d26f4d3" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="15.0" />
+    <build:Item Name="OperatingSystem" Version="10.0.17134.1 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.28307.104" />
+    <build:Item Name="ProjectGUID" Value="{3D0D0930-A9B4-49D8-BED9-F1095CE55F16}" />
+    <build:Item Name="ilc.exe" Version="2.2.28605.00 built by: PROJECTNREL" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.28307.102" />
+    <build:Item Name="OptimizingToolset" Value="ilc.exe" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
+    <build:Item Name="DisableStackTraceMetadata" Value="false" />
+    <build:Item Name="DisableExceptionMessages" Value="false" />
+    <build:Item Name="ShortcutGenericAnalysis" Value="false" />
+    <build:Item Name="GeneratePGD" Value="false" />
+    <build:Item Name="ConsumePGD" Value="false" />
+    <build:Item Name="SingleThreadNUTC" Value="false" />
+    <build:Item Name="Use64BitCompiler" Value="false" />
+    <build:Item Name="OptimizeForSize" Value="false" />
+    <build:Item Name="AlignMethodsAtMinimalBoundaries" Value="false" />
+    <build:Item Name="LargeAddressAware" Value="false" />
+    <build:Item Name="MakePri.exe" Version="10.0.17134.12 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

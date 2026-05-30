@@ -1,0 +1,11 @@
+{
+	"version": "1",
+	"secure": "somekey",
+	"data": {
+		"features": {
+			"soundsharing": {
+				"state": false
+			}
+		}
+	}
+}
