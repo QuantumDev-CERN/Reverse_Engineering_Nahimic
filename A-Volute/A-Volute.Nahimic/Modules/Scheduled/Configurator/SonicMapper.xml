@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<SonicMapper>
+	<Control>
+		<szConfiguratorId Value="{FD80B758-0F95-4792-9D23-9265329969D4}" Type="string" />	<!-- Change the configurator Id in order to overwrite or add  default values -->
+		<bSonicMapperOn Value=0 Type="bool" />
+		<Filtering Type="array">
+			<Enhancer>
+				<fBoostGain_dB Value=0.0 Type="float" />
+				<fCutGain_dB Value=0.0 Type="float" />
+				<uLowFreq_Hz Value=32 Type="ulong" />
+				<uHighFreq_Hz Value=24000 Type="ulong" />
+			</Enhancer>
+			<Enhancer>
+				<fBoostGain_dB Value=0.0 Type="float" />
+				<fCutGain_dB Value=-12.0 Type="float" />
+				<uLowFreq_Hz Value=100 Type="ulong" />
+				<uHighFreq_Hz Value=500 Type="ulong" />
+			</Enhancer>
+			<Enhancer>
+				<fBoostGain_dB Value=0.0 Type="float" />
+				<fCutGain_dB Value=-12.0 Type="float" />
+				<uLowFreq_Hz Value=500 Type="ulong" />
+				<uHighFreq_Hz Value=8000 Type="ulong" />
+			</Enhancer>
+			<Enhancer>
+				<fBoostGain_dB Value=0.0 Type="float" />
+				<fCutGain_dB Value=-12.0 Type="float" />
+				<uLowFreq_Hz Value=2000 Type="ulong" />
+				<uHighFreq_Hz Value=24000 Type="ulong" />
+			</Enhancer>
+		</Filtering>
+		
+		<Analysis>
+			<Global>
+				<uIgnoredChanMask Value=12 Type="uint" />
+				<uLowFreq_Hz Value=0 Type="ulong" />
+				<uHighFreq_Hz Value=24000 Type="ulong" />
+			</Global>
+			<Spatial>
+				<fVisualSmoothTime_s Value=0.06 Type="float" />
+			</Spatial>
+			<AdaptiveScaling>
+				<fAdaptiveMaxdBOffset Value=0.00 Type="float" />
+				<fMaxPowReleaseTime_s Value=0.20 Type="float" />
+			</AdaptiveScaling>
+			<Radar>
+				<nBarCountID Value=5 Type="uint" />
+				<fPeakAscSmoothTime_s Value=0.05 Type="float" />
+				<uLevelScaling Value=2 Type="uint" />
+			</Radar>
+		</Analysis>
+
+		<Graphics>
+			<uDataTimeout_ms Value="80" Type="ulong" />
+		</Graphics>
+
+	</Control>
+	
+	<Shortcuts>
+		<szConfiguratorId Value="{9e18ffd0-a6b5-11e8-b568-0800200c9a66}" Type="string" /> <!-- Change the configurator Id in order to overwrite or add  default values -->
+		<bState Value=1 Type="bool" />
+		<Cursor2DDisplayState Value=0 Type="uint" />
+		<RadarDisplayState Value=0 Type="uint" />
+		<EnhancerDisplayState Value=0 Type="uint" />
+		<Pointer3DDisplayState Value=0 Type="uint" />
+		<EnhancerSwitch Value=0 Type="uint" />
+		<EnhancerAudioFilteringStartTimer Value=0 Type="uint" />
+		<NextSkin Value=0 Type="uint" />
+		<PrevSkin Value=0 Type="uint" />
+		<SonicMapperState Value=12708 Type="uint" />
+	</Shortcuts>
+</SonicMapper>
